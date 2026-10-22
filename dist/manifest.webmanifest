@@ -1,0 +1,22 @@
+{
+  "id": "./",
+  "name": "咖啡Menu",
+  "short_name": "咖啡Menu",
+  "description": "小狗咖啡猫的书架",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#0d0f12",
+  "theme_color": "#0d0f12",
+  "icons": [
+    {
+      "src": "./icons/bookshelf-icon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0f12">
+  <meta name="description" content="咖啡Menu——小狗咖啡猫的书架。">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="咖啡Menu">
+  <title>咖啡Menu</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/bookshelf-icon.png">
+  <link rel="icon" type="image/png" href="./icons/bookshelf-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <header class="shelf-header">
+      <div>
+        <p>小狗咖啡猫的书架 · 01</p>
+        <h1>咖啡Menu</h1>
+      </div>
+      <span>1 本藏书</span>
+    </header>
+
+    <section class="bookcase" aria-label="小狗咖啡猫的书架">
+      <div class="bookcase-frame">
+        <button class="book" type="button" aria-label="打开《尺素》详情">
+          <span class="book-pages" aria-hidden="true"></span>
+          <span class="book-spine" aria-hidden="true">
+            <small>卷一</small>
+            <b>尺素</b>
+            <i>见字如晤</i>
+          </span>
+          <span class="book-cover" aria-hidden="true">
+            <span class="cover-rule"></span>
+            <b>尺<br>素</b>
+            <i>见字如晤</i>
+            <em>小狗咖啡猫藏</em>
+          </span>
+        </button>
+
+        <div class="empty-slot" aria-hidden="true"><span>02</span></div>
+        <div class="empty-slot" aria-hidden="true"><span>03</span></div>
+        <div class="empty-slot" aria-hidden="true"><span>04</span></div>
+        <p class="hint">点击书脊查看详情</p>
+      </div>
+      <div class="shelf-board" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <dialog id="book-dialog" aria-labelledby="dialog-title">
+    <button class="close" type="button" aria-label="关闭详情">×</button>
+    <div class="modal-cover" aria-hidden="true">
+      <span>第一卷</span>
+      <b>尺<br>素</b>
+      <i>见字如晤</i>
+    </div>
+    <article class="modal-copy">
+      <p class="overline">COLLECTION 001 · 古风互动网站</p>
+      <h2 id="dialog-title">尺素</h2>
+      <p class="intro">一方为古风而生的数字书案。</p>
+      <p class="description">以宣纸留白、水墨层次与朱砂印记营造古籍气息，诗词、信笺与毛笔字迹穿行其间。轻轻启卷，就像在灯下拆开一封久候的来信。</p>
+      <div class="tags" aria-label="内容标签"><span>古风</span><span>诗词</span><span>毛笔字</span></div>
+      <a href="https://mewocafe.github.io/chisu/" target="_blank" rel="noopener noreferrer">
+        前往《尺素》
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"></path></svg>
+      </a>
+    </article>
+  </dialog>
+
+  <script src="./script.js"></script>
+</body>
+</html>
